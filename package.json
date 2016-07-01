@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run tsc & mocha",
+    "start": "npm run tsc && node server",
+    "tsc": "tsc --p tsconfig.json"
   },
   "author": "",
   "license": "ISC",
